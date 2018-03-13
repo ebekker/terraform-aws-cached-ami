@@ -1,4 +1,4 @@
-# README - Terraform Module:  `cacheable_aws_ami`
+# README - Terraform Module:  `aws-cached-ami`
 
 Implements a cacheable version of the aws_ami data source.  Since the aws_ami data source typically
 takes a long time to query and resolve for the AMI based on input properties, and the fact that the
