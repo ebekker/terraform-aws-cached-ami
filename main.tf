@@ -26,7 +26,7 @@ data "external" "item_cache" {
     "pwsh#${path.module}/res/Get-TFCache.ps1#${var.cache_root}${
       var.cache_expires <= 0
         ? ""
-        : "#-ExpireSecs ${var.cache_expires}"}")}"]
+        : "#-ExpireSecs#${var.cache_expires}"}")}"]
 }
 
 ## Step #2:  for each cachable item, we define the actual data
